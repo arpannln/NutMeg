@@ -4,25 +4,26 @@ import React, { Component } from 'react';
 export default class Home extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = { countries: {} };
   }
 
   componentDidMount() {
-    // let data = fetch('https://api.sportdeer.com/v1/countries?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1YjBkZWVhMDQ2MjNjNDU3ZjBjMDA4ZDgiLCJhY2Nlc3NfbGV2ZWwiOjEsImlhdCI6MTUyNzcwMDMxNywiZXhwIjoxNTI3NzAyMTE3fQ.alDAAdMSju_IRIje-4BiCGll-wLPJHiBgPbjkg3Ja24')
-    //   .then(function(response) {
-    //     return response.json();
-    //   }).then(function(json) {
-    //     console.log('parsed json', json);
-    //   }).catch(function(ex) {
-    //     console.log('parsing failed', ex);
-    //   });
+    let that = this;
 
-    // this.setState({data: data});
+    async function fetchCountries () {
+      console.log(that.props);
+       let response = await fetch(`https://api.sportdeer.com/v1/countries?access_token=${that.props.accessCode}`);
+       let countries = await response.json();
+
+       that.setState({ countries: countries.docs });
+    }
+
+    fetchCountries();
   }
 
 
   render() {
-  
+    let countries =  this.state.countries;
     return (
       <div>
       </div>);

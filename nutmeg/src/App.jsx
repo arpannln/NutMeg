@@ -36,12 +36,13 @@ class App extends Component {
     let key = this.state.key;
 
     return key ?
-      <div></div> :
-     (
-      <div className="App">
-        <Home key={key}></Home>
-      </div>
-     );
+        (
+          <div className="App">
+            <Home accessCode={key}></Home>
+          </div>
+        )
+      :
+        <div></div>
   }
 }
 
