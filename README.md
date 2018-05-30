@@ -14,4 +14,5 @@ First decent soccer website
   * Daily News
   * Daily prayers that all of this info actually has API's for them 
   
-  
+# Key Struggles
+  * Spent hours looking for ideal accessible Soccer APIs - Try SportDeer -- free until 2019!
