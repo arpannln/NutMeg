@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import '../App.css';
 
 export default class Home extends Component {
   constructor() {
@@ -11,7 +11,6 @@ export default class Home extends Component {
     let that = this;
 
     async function fetchCountries () {
-      console.log(that.props);
        let response = await fetch(`https://api.sportdeer.com/v1/countries?access_token=${that.props.accessCode}`);
        let countries = await response.json();
 
@@ -21,11 +20,18 @@ export default class Home extends Component {
     fetchCountries();
   }
 
-
   render() {
-    let countries =  this.state.countries;
+    let countries =  Array.from(this.state.countries);
     return (
       <div>
+        {
+          countries.map( (country) => (
+              <div key={country.id}>
+                <h1> {country.name} </h1>
+                <img src={country.square_flag}/>
+              </div>
+            ))
+        }
       </div>);
   }
 }

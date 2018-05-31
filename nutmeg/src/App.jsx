@@ -38,6 +38,8 @@ class App extends Component {
     return key ?
         (
           <div className="App">
+            <h1> wtf is going on </h1>
+            <img src="http://assets.sportdeer.com/flags/svg/1x1/be.svg"/>
             <Home accessCode={key}></Home>
           </div>
         )
