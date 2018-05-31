@@ -16,3 +16,5 @@ First decent soccer website
   
 # Key Struggles
   * Spent hours looking for ideal accessible Soccer APIs - Try SportDeer -- free until 2019!
+  * implementing Async/Await with fetch in componentDidMount instead of .then wasn't too bad actually
+  * .svg files are annoying to render
