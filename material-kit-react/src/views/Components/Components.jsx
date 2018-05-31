@@ -46,6 +46,7 @@ class Components extends React.Component {
           }}
           {...rest}
         />
+
         <Parallax image={require("assets/img/bg4.jpg")}>
           <div className={classes.container}>
             <GridContainer>
@@ -55,6 +56,11 @@ class Components extends React.Component {
                   <h3 className={classes.subtitle}>
                     A Badass Material-UI Kit based on Material Design.
                   </h3>
+                  <Link to={"/login-page"} className={classes.link}>
+                    <Button color="primary" size="lg" simple>
+                      View NutMeg
+                    </Button>
+                  </Link>
                 </div>
               </GridItem>
             </GridContainer>
