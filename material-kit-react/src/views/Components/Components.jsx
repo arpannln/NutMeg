@@ -56,7 +56,7 @@ class Components extends React.Component {
                   <h3 className={classes.subtitle}>
                     A Badass Material-UI Kit based on Material Design.
                   </h3>
-                  <Link to={"/login-page"} className={classes.link}>
+                  <Link to={"/soccer-app"} className={classes.link}>
                     <Button color="primary" size="lg" simple>
                       View NutMeg
                     </Button>
