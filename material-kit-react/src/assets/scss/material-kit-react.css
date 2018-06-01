@@ -742,7 +742,7 @@ td.rdtYear:hover {
     color: #ffffff;
     text-align: center;
     z-index: 3;
-    display: none; }
+    display: flex; }
   .slick-slider .slick-slide > div:first-child {
     position: relative; }
   .slick-slider .slick-icons {
@@ -751,6 +751,18 @@ td.rdtYear:hover {
   .slick-slider .slick-image {
     width: 100% !important;
     display: inline-flex !important; }
+  .slick-slider .slick-button {
+    top: 70vh;
+    left: 45vw; }
+  .slick-slider .slick-logo {
+    top: 5vh;
+    left: 5vw; }
+  .slick-slider .absolute {
+    position: absolute; }
+  .slick-slider .large {
+    height: 20vh; }
+  .slick-slider .medium {
+    height: 10vh; }
   .slick-slider .slick-hero {
     width: 100vw;
     height: 100vh;
@@ -765,8 +777,12 @@ td.rdtYear:hover {
     left: 50%; }
   .slick-slider .slick-white-txt {
     color: white; }
+  .slick-slider .slick-txt-primary {
+    color: #9c27b0; }
   .slick-slider .slick-txt-bold {
     font-weight: 700; }
+  .slick-slider .slick-txt-shadow {
+    text-shadow: 2px 2px black; }
 
 .slick-list {
   position: relative;
@@ -854,12 +870,11 @@ button.slick-arrow.slick-next {
   transform: translateY(-50%);
   cursor: pointer;
   border: none;
-  color: transparent;
   outline: none;
   background: transparent;
   width: 15%;
   z-index: 2;
-  opacity: 0.5; }
+  opacity: 0.6; }
 
 .slick-prev {
   left: 0; }
@@ -874,7 +889,7 @@ button.slick-arrow.slick-next {
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
-    color: white;
+    color: #FFF;
     font-size: 30px;
     width: 100%; }
 
