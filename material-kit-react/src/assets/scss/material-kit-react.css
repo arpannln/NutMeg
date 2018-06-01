@@ -751,6 +751,22 @@ td.rdtYear:hover {
   .slick-slider .slick-image {
     width: 100% !important;
     display: inline-flex !important; }
+  .slick-slider .slick-hero {
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex; }
+  .slick-slider .slick-title {
+    left: 45%;
+    top: 15%;
+    position: absolute; }
+  .slick-slider .slick-title-caption {
+    position: absolute;
+    top: 25%;
+    left: 50%; }
+  .slick-slider .slick-white-txt {
+    color: white; }
+  .slick-slider .slick-txt-bold {
+    font-weight: 700; }
 
 .slick-list {
   position: relative;

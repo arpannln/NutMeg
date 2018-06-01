@@ -48,6 +48,37 @@
     width: 100% !important;
     display: inline-flex !important;
   }
+
+  .slick-hero {
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+  }
+
+  .slick-title {
+    left: 45%;
+    top: 15%;
+    position: absolute;
+  }
+
+  .slick-title-caption {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+  }
+
+
+  .slick-white-txt {
+    color: white;
+  }
+
+  .slick-txt-shadow {
+
+  }
+
+  .slick-txt-bold {
+    font-weight: 700;
+  }
 }
 
 .slick-list
