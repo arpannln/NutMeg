@@ -10,7 +10,7 @@ var indexRoutes = [
   { path: "/landing-page", name: "LandingPage", component: LandingPage },
   { path: "/profile-page", name: "ProfilePage", component: ProfilePage },
   { path: "/login-page", name: "LoginPage", component: LoginPage },
-  { path: "/soccer-app/:LeagueId", name: "LeagueHome", component: LeagueHome },
+  { path: "/soccer-app/leagues/:LeagueId/:access", name: "LeagueHome", component: LeagueHome },
   { path: "/soccer-app", name: "NutMeg", component: NutMeg },
   { path: "/", name: "Components", component: Components }
 

@@ -11,13 +11,9 @@ import logoWorldCup from "../../../assets/img/WorldCupLogo.png";
 import imageHome from "../../../assets/img/Home.jpg";
 import Info from "components/Typography/Info.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import  {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 class LeaguesCarousel extends React.Component {
-  constructor() {
-    super();
-  }
-
   render() {
     const settings = {
       dots: true,
@@ -25,7 +21,7 @@ class LeaguesCarousel extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       adaptiveHeight: true
     };
     return (
@@ -33,7 +29,7 @@ class LeaguesCarousel extends React.Component {
           <div>
             <h1 className="slick-title slick-white-txt"> NutMeg
             </h1>
-            <h3 className="slick-title-caption slick-txt-primary"> Breaking the Meta for Soccer Stats </h3>
+            <h3 className="slick-title-caption slick-txt-primary"> Redefining Soccer's Online Presence </h3>
             <img
               src={imageHome}
               alt="First slide"
@@ -50,8 +46,8 @@ class LeaguesCarousel extends React.Component {
               src={logoWorldCup}
               className="slick-logo absolute large">
             </img>
-            <Link to={`/soccer-app/1`}>
-              <Button color="success" className="absolute slick-button">Take me</Button>
+            <Link to={`/soccer-app/leagues/82/${this.props.access}`}>
+              <Button color="success" className="absolute slick-button">World Cup</Button>
             </Link>
             <img
               src={imageWorldCup}
@@ -69,7 +65,9 @@ class LeaguesCarousel extends React.Component {
               src={logoEPL}
               className="slick-logo absolute medium">
             </img>
-            <Button color="success" className="absolute slick-button">Default</Button>
+            <Link to={`/soccer-app/leagues/8/${this.props.access}`}>
+              <Button color="success" className="absolute slick-button">EPL</Button>
+            </Link>
             <img
               src={imageEPL}
               alt="Third slide"
@@ -86,7 +84,9 @@ class LeaguesCarousel extends React.Component {
               src={logoLaLiga}
               className="slick-logo absolute medium">
             </img>
-            <Button color="success" className="absolute slick-button">Default</Button>
+            <Link to={`/soccer-app/leagues/129/${this.props.access}`}>
+              <Button color="success" className="absolute slick-button">La Liga</Button>
+            </Link>
             <img
               src={imageLaLiga}
               alt="Fourth slide"
@@ -103,7 +103,9 @@ class LeaguesCarousel extends React.Component {
               src={logoBundesliga}
               className="slick-logo absolute medium">
             </img>
-            <Button color="success" className="absolute slick-button">Default</Button>
+            <Link to={`/soccer-app/leagues/108/${this.props.access}`}>
+              <Button color="success" className="absolute slick-button">Bundesliga</Button>
+            </Link>
             <img
               src={imageBundesliga}
               alt="Fifth slide"
