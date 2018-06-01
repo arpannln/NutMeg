@@ -752,17 +752,17 @@ td.rdtYear:hover {
     width: 100% !important;
     display: inline-flex !important; }
   .slick-slider .slick-button {
-    top: 70vh;
-    left: 45vw; }
+    left: 45%;
+    top: 70%; }
   .slick-slider .slick-logo {
-    top: 5vh;
-    left: 5vw; }
+    top: 5%;
+    left: 5%; }
   .slick-slider .absolute {
     position: absolute; }
   .slick-slider .large {
-    height: 20vh; }
+    height: 20%; }
   .slick-slider .medium {
-    height: 10vh; }
+    height: 10%; }
   .slick-slider .slick-hero {
     width: 100vw;
     height: 100vh;

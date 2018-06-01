@@ -49,14 +49,15 @@
     display: inline-flex !important;
   }
 
+//fix this later: probs will have to add a container for the div
   .slick-button {
-    top: 70vh;
-    left: 45vw;
+    left: 45%;
+    top: 70%;
   }
 
   .slick-logo {
-    top: 5vh;
-    left: 5vw;
+    top: 5%;
+    left: 5%;
   }
 
   .absolute {
@@ -64,11 +65,11 @@
   }
 
   .large {
-    height: 20vh;
+    height: 20%;
   }
 
   .medium {
-    height: 10vh;
+    height: 10%;
   }
 
   .slick-hero {

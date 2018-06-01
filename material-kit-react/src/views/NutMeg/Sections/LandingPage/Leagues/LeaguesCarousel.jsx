@@ -10,8 +10,8 @@ import imageWorldCup from "../../../assets/img/WorldCup.jpg";
 import logoWorldCup from "../../../assets/img/WorldCupLogo.png";
 import imageHome from "../../../assets/img/Home.jpg";
 import Info from "components/Typography/Info.jsx";
-import LocationOn from "@material-ui/icons/LocationOn";
 import Button from "components/CustomButtons/Button.jsx";
+import  {Link} from "react-router-dom";
 
 class LeaguesCarousel extends React.Component {
   constructor() {
@@ -50,7 +50,9 @@ class LeaguesCarousel extends React.Component {
               src={logoWorldCup}
               className="slick-logo absolute large">
             </img>
-            <Button color="success" className="absolute slick-button">Default</Button>
+            <Link to={`/soccer-app/1`}>
+              <Button color="success" className="absolute slick-button">Take me</Button>
+            </Link>
             <img
               src={imageWorldCup}
               alt="Second slide"
