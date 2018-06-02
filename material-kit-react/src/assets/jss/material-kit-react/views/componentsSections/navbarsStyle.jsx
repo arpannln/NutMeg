@@ -16,7 +16,7 @@ const navbarsStyle = theme => ({
   navbar: {
     marginBottom: "-20px",
     zIndex: "100",
-    position: "relative",
+    position: "absolute",
     overflow: "hidden",
     "& header": {
       borderRadius: "0"
@@ -40,6 +40,7 @@ const navbarsStyle = theme => ({
     height: "20px",
     color: "inherit"
   },
+  //holy shit rest operator fucking OP
   ...headerLinksStyle(theme),
   img: {
     width: "40px",

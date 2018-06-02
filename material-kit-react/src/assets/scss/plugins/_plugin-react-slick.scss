@@ -64,6 +64,10 @@
     position: absolute;
   }
 
+  .low-z-index {
+    z-index: -3;
+  }
+
   .large {
     height: 20%;
   }
@@ -72,9 +76,13 @@
     height: 10%;
   }
 
+  .make-pop {
+    z-index: 2;
+  }
+
   .slick-hero {
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
     display: inline-flex;
   }
 

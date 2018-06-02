@@ -12,6 +12,7 @@ import imageHome from "../../../assets/img/Home.jpg";
 import Info from "components/Typography/Info.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import {Link} from "react-router-dom";
+import NavBar from "../../NavBar/NavBar.jsx";
 
 class LeaguesCarousel extends React.Component {
   render() {
@@ -21,10 +22,12 @@ class LeaguesCarousel extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       adaptiveHeight: true
     };
     return (
+      <div>
+        <NavBar/>
         <Carousel {...settings}>
           <div>
             <h1 className="slick-title slick-white-txt"> NutMeg
@@ -118,6 +121,7 @@ class LeaguesCarousel extends React.Component {
             </div>
           </div>
       </Carousel>
+    </div>
     );
   }
 }
