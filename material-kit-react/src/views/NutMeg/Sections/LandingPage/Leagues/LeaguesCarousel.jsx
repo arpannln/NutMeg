@@ -22,7 +22,7 @@ class LeaguesCarousel extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       adaptiveHeight: true
     };
     return (

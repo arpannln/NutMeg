@@ -35,14 +35,34 @@ class NavBar extends React.Component {
                 </Button>
               </ListItem>
               <ListItem className={classes.listItem}>
-                <Button
-                  href="#pablo"
-                  className={classes.navLink}
-                  onClick={e => e.preventDefault()}
-                  color="transparent"
-                >
-                  Leagues
-                </Button>
+                <CustomDropdown
+                  buttonText="Leagues"
+                  buttonProps={{
+                    className: classes.navLink,
+                    color: "transparent"
+                  }}
+                  dropdownList={[
+                    "Premier League",
+                    "La Liga",
+                    "Bundesliga"
+                  ]}
+                />
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                <CustomDropdown
+                  buttonText="Countries"
+                  buttonProps={{
+                    className: classes.navLink,
+                    color: "transparent"
+                  }}
+                  dropdownList={[
+                    "England",
+                    "Spain",
+                    "Germany",
+                    { divider: true },
+                    "India LOL"
+                  ]}
+                />
               </ListItem>
             </List>
           }
